@@ -2,7 +2,7 @@
 @name Widen ChatGPT Chat Interface
 @namespace https://github.com/iitsg/stylus-styles/chatgpt
 @homepageURL https://github.com/iitsg/stylus-styles
-@version 0.0.5
+@version 0.0.6
 @updateURL https://github.com/iitsg/stylus-styles/raw/main/chatgpt/widen-interface.user.css
 @supportURL https://github.com/iitsg/stylus-styles/issues?q=is%3Aopen+is%3Aissue+label%3Achatgpt
 @description Widens the main ChatGPT chat interface.
@@ -13,16 +13,16 @@
 @var select percentage "Percentage" ["60%", "65%", "70%", "75%", "80%", "85%", "90%", "95%"]
 ==/UserStyle== */
 @-moz-document domain("chatgpt.com") {
-    /* Input form container width reset */
-    body > div.relative.flex.h-full.w-full.overflow-hidden.transition-colors.z-0 > div.relative.flex.h-full.max-w-full.flex-1.flex-col.overflow-hidden > main > div.composer-parent.flex.h-full.flex-col.focus-visible\:outline-0 > div > div > div.text-base.px-3.md\:px-4.m-auto.w-full.md\:px-5.lg\:px-1.xl\:px-5 > div {
-        max-width: 100%;
-        width: @percentage !important;
-    }
-
-    /* Chat screen and input form width apply */
+    /* Chat Styling */
     body > div.relative.flex.h-full.w-full.overflow-hidden.transition-colors.z-0 > div.relative.flex.h-full.max-w-full.flex-1.flex-col.overflow-hidden > main > div.composer-parent.flex.h-full.flex-col.focus-visible\:outline-0 > div.flex-1.overflow-hidden > div > div > div > div > article > div > div,
     body > div.relative.flex.h-full.w-full.overflow-hidden.transition-colors.z-0 > div.relative.flex.h-full.max-w-full.flex-1.flex-col.overflow-hidden > main > div.composer-parent.flex.h-full.flex-col.focus-visible\:outline-0 > div.flex-1.overflow-hidden > div > div > div > div > article > div > div > div > div > div > div > div > div,
-    body > div.relative.flex.h-full.w-full.overflow-hidden.transition-colors.z-0 > div.relative.flex.h-full.max-w-full.flex-1.flex-col.overflow-hidden > main > div.composer-parent.flex.h-full.flex-col.focus-visible\:outline-0 > div > div > div.text-base.px-3.md\:px-4.m-auto.w-full.md\:px-5.lg\:px-1.xl\:px-5 > div {
+    {
         max-width: @percentage !important;
+    }
+
+    /* Text Input Bar Styling */
+    body > div.relative.flex.h-full.w-full.overflow-hidden.transition-colors.z-0 > div.relative.flex.h-full.max-w-full.flex-1.flex-col.overflow-hidden > main > div.composer-parent.flex.h-full.flex-col.focus-visible\:outline-0 > div.md\:pt-0.dark\:border-white\/20.md\:border-transparent.md\:dark\:border-transparent.w-full > div > div.text-base.px-3.md\:px-4.m-auto.w-full.md\:px-5.lg\:px-4.xl\:px-5 > div {
+        max-width: @percentage !important;
+        width: @percentage !important;
     }
 }
